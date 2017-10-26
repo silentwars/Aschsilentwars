@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>ASCH</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/mains.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+      <body>
+      	<!--顶部导航-->
+      	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="menu-nav">
+      		<div class="container">
+      			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      					<span class="sr-only">切换导航</span>
+      					<span class="icon-bar"></span>
+      					<span class="icon-bar"></span>
+      					<span class="icon-bar"></span>
+      				</button>
+      				<a class="navbar-brand" href="#"><span>ASCH</span></a>
+      			</div>
+      			<div class="navbar-collapse collapse">
+      				<ul class="nav navbar-nav pull-left">
+      					<li><a href="#home-page">首页</a></li>
+      					<li><a href="#about-Asch">关于Asch</a></li>
+      					<li><a href="#works">新手学习手册</a></li>
+      					<li class="dropdown" id="demo-navbar">
+      						<a href="#" class="dropdown-toggle" data-toggle="dropdown">应用场景和解决方案<span class="caret"></span></a>
+      						<ul class="dropdown-menu" role="menu">
+      							<li><a href="#tab-assets" data-tab="tab-assets">发行资产</a></li>
+      							<li><a href="#tab-arbitration" data-tab="tab-arbitration">仲裁</a></li>
+      							<li><a href="#tab-exchange" data-tab="tab-exchange">去中介交易所</a></li>
+      							<li><a href="#tab-proof" data-tab="tab-proof">存在性证明</a></li>
+                    <li><a href="#tab-things" data-tab="tab-things">物联网</a></li>
+      						</ul>
+      					</li>
+      					<li><a href="#contact">谁在使用Asch</a></li>
+      					<li><a style="cursor: pointer;" class="modal" data-target="#about-modal" data-toggle="modal">关于</a></li>
+      				</ul>
+      			</div>
+      		</div>
+      	</nav>
+
+      	<div class="jumbotron" id="home-page">
+      		<h1 style="font-size: 40px;font-weight: bold;">基于侧链技术的新一代区块链应用开发平台。</h1>
+      		<p>ASCH<br>与你同行，共同成长ASCH。<br>官方邮件：service@asch.so</p>
+      		<p><a class="btn btn-lg btn-info" href="Asch document data.html" role="button">了解更多</a></p>
+      	</div>
+
+      	<div class="container summary">
+      		<!--about me-->
+      		<div class="about_Asch" id="about-Asch">
+      			<h3>About Asch<br>特点和不同</h3>
+      			<div class="row row_style">
+      				<div style="height: 25px"></div>
+      				<div class="col-sm-2">
+      					<div class="gly">
+      						<a class="gly_icon" class="modal" data-target="#about-side-chain" data-toggle="modal">
+      							<span class="glyphicon  glyphicon-object-align-horizontal"></span>
+      						</a>
+      					</div>
+      					<p class="explain_left">侧链构架</p>
+      				</div>
+      				<div class="col-sm-2">
+      					<div class="gly">
+      						<a class="gly_icon" class="modal-modal" data-target="#about-wrong" data-toggle="modal" >
+      							<span class="glyphicon glyphicon-random"></span>
+      						</a>
+      					</div>
+      					<p class="explain_left">拜占庭容错</p>
+      				</div>
+      				<div class="col-sm-2">
+      					<div class="gly">
+      						<a class="gly_icon" class="modal-modal" data-target="#about-sandbox" data-toggle="modal">
+      							<span class="glyphicon  glyphicon-hdd"></span>
+      						</a>
+      					</div>
+      					<p class="explain_left">安全沙箱</p>
+      				</div>
+
+      				<div class="col-sm-2">
+      					<div class="gly">
+      						<a class="gly_icon" class="modal-modal" data-target="#about-store" data-toggle="modal">
+      							<span class="glyphicon  glyphicon-th-large"></span>
+      						</a>
+      					</div>
+      					<p class="explain_left">应用商店</p>
+      				</div>
+              <div class="col-sm-2">
+                <div class="gly">
+                  <a class="gly_icon" class="modal-modal" data-target="#about-vote" data-toggle="modal">
+                    <span class="glyphicon  glyphicon-signal"></span>
+                  </a>
+                </div>
+                <p class="explain_left">民主投票</p>
+              </div>
+              <div class="col-sm-2">
+                <div class="gly">
+                  <a class="gly_icon" class="modal-modal" data-target="#about-friend" data-toggle="modal">
+                    <span class="glyphicon  glyphicon-user "></span>
+                  </a>
+                </div>
+                <p class="explain_left">开发者友好</p>
+              </div>
+      			</div>
+      			<div class="row">
+                        <div id="about_Asch_info" class="col-md-12">
+                      <p>Asch在模式上类似以太坊，其设计初衷是为了降低开发者的门槛，比如:</p>
+                      <p>1、使用javascript作为应用编程语言，支持关系数据库来存储交易数据，使得开发一个dapp与传统的web应用非常相似，这对开发者和中小型企业有很大的吸引力。</p>
+                      <p>2、Asch在设计上也是开放的，并没有局限于某个细分领域，比如金融、文件存储、版权证明等，其提供的api都是较底层和抽象的，它们可以被自由组合实现各种不同的应用。</p><p>3、在共识机制方面，Asch继承并增强了DPOS算法，大大降低了分叉几率和双重支付风险。</p>
+                      <p>4、另外，Asch的侧链即应用模式不但延缓了区块链膨胀问题，还使得dapp更加的灵活和个性化。Asch是一个具有前瞻性的、低成本的一站式应用解决方案，相信将成为新一代区块链应用的孵化器。</p>
+                         </div>
+                   </div>      			
+             </div>
+
+
+             <div class="row clearfix" id="works">
+               <div class="row_p">
+                    <h3 class="text-center" style="font-weight: bold;">新手手册<br><small style="font-weight: bold;">新手学习手册、Asch相关资料文档、最新进度和事件、相关链接大全等</small></h3>
+              </div>
+
+              <div class="col-sm-3">
+                    <div class="showLink">
+                         <div class="showLink_shadow">
+                              <p class="showLink_box_title">新手学习手册</p>
+                              <span class="showLink_box_icon">
+                                   <a href="#" target="_blank">
+                                        <img src="image/demo-link.png" />
+                                  </a>
+                            </span>					
+                      </div>
+                      <img class="showLink_img" src="image/box012.jpg" alt="chrome" />
+                </div>				
+                <h4>新手学习手册</h4>
+                <p><a class="btn btn-primary" href="#" role="button" target="_blank">了解更多</a></p>
+          </div>
+
+          <div class="col-sm-3">
+              <div class="showLink">
+                   <div class="showLink_shadow">
+                        <p class="showLink_box_title">Asch相关资料文档</p>
+                        <span class="showLink_box_icon">
+                             <a href="#" target="_blank">
+                                  <img src="image/demo-link.png" />
+                            </a>
+                      </span>					
+                </div>
+                <img class="showLink_img" src="image/box02.jpg" alt="chrome" />
+          </div>				
+          <h4>Asch相关资料文档</h4>
+
+          <p><a class="btn btn-primary" href="#" role="button" target="_blank">了解更多</a></p>
+    </div>
+    <div class="col-sm-3">
+        <div class="showLink">
+             <div class="showLink_shadow">
+                  <p class="showLink_box_title">最新进度和事件</p>
+                  <span class="showLink_box_icon">
+                       <a href="#" target="_blank">
+                            <img src="image/demo-link.png" />
+                      </a>
+                </span>                             
+          </div>
+          <img class="showLink_img" src="image/box03.jpg" alt="chrome" />
+    </div>                        
+    <h4>最新进度和事件</h4>
+    <p><a class="btn btn-primary" href="#" role="button" target="_blank">了解更多</a></p>
+</div>
+
+
+<div class="col-sm-3">
+  <div class="showLink">
+       <div class="showLink_shadow">
+            <p class="showLink_box_title">相关链接大全</p>
+            <span class="showLink_box_icon">
+                 <a href="#" target="_blank">
+                      <img src="image/demo-link.png" />
+                </a>
+          </span>					
+    </div>
+    <img class="showLink_img" src="image/box04.jpg" alt="chrome" />
+</div>				
+<h4>相关链接大全</h4>
+<p><a class="btn btn-primary" href="#" role="button" target="_blank">了解更多</a></p>
+</div>
+</div>
+<hr class="divider">
+
+<!--标签页-->
+<ul class="nav nav-tabs" role="tablist" id="feature-tab">
+   <li class="active"><a href="#tab-assets" role="tab" data-toggle="tab">发行资产</a></li>
+   <li><a href="#tab-arbitration" role="tab" data-toggle="tab">仲裁</a></li>
+   <li><a href="#tab-exchange" role="tab" data-toggle="tab">去中介交易所</a></li>
+   <li><a href="#tab-proof" role="tab" data-toggle="tab">存在性证明</a></li>
+   <li><a href="#tab-things" role="tab" data-toggle="tab">物联网</a></li>
+</ul>
+
+<div class="tab-content">
+   <div class="tab-pane active" id="tab-assets">
+        <div class="row feature">
+             <div class="col-md-5  col-md-offset-2 feature">
+                  <h2 class="feature-heading">发行资产<span
+                       class="text-muted"></span></h2>
+                       <p class="lead">开发者可能不需要编写代码，只要在genesis.json文件里修改一些创世参数，就可以发布一个令牌系统了。Asch系统中的令牌与以太坊的子货币一样，可以表示黄金、股票、抵押物、或任意其他资产，这些令牌可以与转入侧链中的XAS通过去中介的方式进行交易，从而实现流通，也可以在中心化的交易所与其他货币进行交易。</p>
+                 </div>
+                 <div class="col-md-3 col-md-offset-1">
+                       <img  class="feature-image img-responsive" src="image/assets.png" alt="assets">
+                 </div>
+           </div>
+     </div>
+     <div class="tab-pane" id="tab-arbitration">
+       <div class="row feature">
+            <div class="col-md-3  col-md-offset-2">
+                 <img  class="feature-image img-responsive" src="image/arbitration.png" alt="arbitration">
+           </div>
+           <div class="col-md-5  col-md-offset-1 feature">
+
+                 <h2 class="feature-heading">仲裁<span class="text-muted"></span>
+                 </h2>
+
+                 <p class="lead">假设一个买家想跟一个不认识的人进行交易，一般情况下如果交易顺利进行的话，双方都不希望有第三方介入，但是如果某个环节出了问题，比如买家对商品不满意时，他们就希望有一个中间人来做调解。这个中间人可能会要求买卖双方出示一些证据，然后做出判决，比如把钱退还一部分给买家。Asch系统提供的多重签名系列接口可以帮助开发者完成此类应用。</p>
+           </div>
+     </div>
+</div>
+<div class="tab-pane" id="tab-exchange">
+ <div class="row feature">
+      <div class="col-md-5 col-md-offset-2">
+           <h2 class="feature-heading">去中介交易所<span class="text-muted"></span></h2>
+           <p class="lead">根据是否支持法币，可以分为两种程度的去中介。如果不支持法币，可以实现完全的去中介，如果支持法币，则只能实现半去中介，即法币通过网关出入，但交易信息公开。 完全的去中介交易所又分为两种，一种是点对点的交易，通过Asch系统提供的“原子跨链交易api”来实现。另一种是挂单交易，挂单交易要求卖方从其他区块链转入一定的资产到Asch侧链中，这个转入操作通过父链冻结资产的SPV证明达成。此外，由于关系数据库的支持，利用联表查询和索引功能，可以很容易的实现一个效率不错的撮合引擎。</p>
+     </div>
+     <div class="col-md-3">
+           <img class="feature-img img-responsive" src="image/exchange.png" alt="exchange" />
+     </div>
+</div>
+</div>
+<div class="tab-pane" id="tab-proof">
+ <div class="row feature">
+      <div class="col-md-3 col-md-offset-2">
+           <img class="feature-image img-responsive" src="image/proof.png"
+           alt="proof">
+     </div>
+     <div class="col-md-5 col-md-offset-1 feature">
+           <h2 class="feature-heading">存在性证明<span class="text-muted"></span>
+           </h2>
+           <p class="lead">存在性证明可以用于登记文件版权、专利等，其基本原理是将要存储的文件的哈希值存入到Asch的侧链中，以此来证明某个特定文件存在，还可以加上时间戳、当事人的数字签名等元数据，来证明他们是在何时持有这些文件的。这些信息无法伪造、无法篡改，不会暴露数据和隐私，在需要的时候随时可以验证且不依赖第三方机构。</p>
+     </div>
+</div>
+</div>
+<div class="tab-pane" id="tab-things">
+ <div class="row feature">
+      <div class="col-md-3 col-md-offset-2">
+           <img class="feature-image img-responsive" src="image/things.png"
+           alt="things">
+     </div>
+     <div class="col-md-5 col-md-offset-1 feature">
+           <h2 class="feature-heading">物联网<span class="text-muted"></span>
+           </h2>
+           <p class="lead">物联网中存在海量的联网设备，很难有一个中央机构来管理所有的设备和各节点的身份。Asch的侧链是一个很好的解决方案，首先，它解决了节点间信任问题，设备间彼此相连形成分布式网络，通过共识算法来保证设备间交易的合法，并且可追踪、可审查、可分析。其次，不同种类的设备可以接入不同的侧链，这是我们前面提到的天然分片机制，避免了总账本的爆炸式增长。</p>
+     </div>
+</div>
+</div>
+</div>
+
+<div class="hr_30"></div>
+<!--contact me-->
+<div class="contact_me clearfix" id="contact">
+  <div class="contact_color">
+       <h3>ASCH</h3>
+       <h3>未来&nbsp;&nbsp;创新&nbsp;&nbsp;共享&nbsp;&nbsp;理想<br><span>FUTURE</span>&nbsp;&nbsp;<span>INNOVATE</span>&nbsp;&nbsp;<span>SHARE</span>&nbsp;&nbsp;<span>IDEALITY</span> </h3>
+       <h3>谁在使用Asch</h3>
+ </div>
+ 
+ <div class="well_list fl">
+        <h3>普通用户</h3>
+       <p class="well">普通用户可以访问在线钱包或者下载客户端来使用asch系统，普通用户可以使用的功能包括账户查询、转账、投票、区块浏览、应用下载与使用等。在轻钱包与在线钱包中，用户无法下载和安装应用，只能使用受托人安装好的应用。完整版钱包中，用户将可以自行下载和安装商店中的应用。</p> 
+ </div>      
+ <div class="well_list fl">
+       <h3>受托人/见证人</h3>
+       <p class="well">受托人/见证人是区块链数据的写入者和验证者，他们是由所有持币人投票选举产生，负责整个网络的正常运行。受托人类似比特币系统的矿工，但不需要具备强大的算力。受托人生产区块的过程叫做锻造，通过锻造可以获取交易费和奖励，作为维护网络的费用。</p> 
+ </div>     
+ <div class="well_list fl">
+       <h3>开发者</h3>
+       <p class="well">开发者可以根据Asch平台的应用开发规则和商业行为准则，并按照相关的规范进行开发和提交Dapp。Dapp的商业模式或免费，或定价销售，或按增值服务付费，采用何种商业模式完全由开发者决定。Dapp会被收录到应用商店中，供其他用户下载使用。</p> 
+ </div>    
+</div>
+
+<!--弹出框-->
+<div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+       <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关于</span></button>
+            <div class="modal-title">关于</div>
+      </div>
+      <div class="modal-body">
+            <p>此页面或网站用于个人对Asch的见解，分享。与北京阿希链科技有限公司无关。</p>
+      </div>
+      <div class="modal-footer ">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+      </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="about-side-chain" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+       <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">侧链</span></button>
+            <div class="modal-title">侧链</div>
+      </div>
+      <div class="modal-body">
+            <p>使用侧链的好处是数据独立，不增加主链负担，避免数据过度膨胀和不可控，实际上是一种天然的分片机制。其次，侧链还可以灵活定制各项区块链参数，如区块间隔、交易费、奖励等</p>
+      </div>
+      <div class="modal-footer ">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+      </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="about-wrong" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+       <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">拜占庭容错</span></button>
+            <div class="modal-title">拜占庭容错</div>
+      </div>
+      <div class="modal-body">
+            <p>Asch系统能够容忍最多1/3的受托人节点同时出错，只要不出现受托人联合作弊或大范围被盗的情况下，交易与区块是不会被回滚的，这使得交易确认的速度可以很快，2次确认就可以满足基本的安全需求，只需要20秒。</p>
+      </div>
+      <div class="modal-footer ">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+      </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="about-sandbox" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+       <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">安全沙箱</span></button>
+            <div class="modal-title">安全沙箱</div>
+      </div>
+      <div class="modal-body">
+            <p>每一个asch节点都能安装多个侧链子系统，而且asch节点的主人无需信任侧链的开发者。这就需要提供一种安全防范的措施。Asch提供的沙箱机制可以防止侧链应用代码盗取节点主人的信息及对服务器造成损害。</p>
+      </div>
+      <div class="modal-footer ">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+      </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="about-store" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+       <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">应用商店</span></button>
+            <div class="modal-title">应用商店</div>
+      </div>
+      <div class="modal-body">
+            <p>开发者提交的应用会被注册到主链上，用户可以在主链钱包中浏览、查看、使用。一个应用需要被受托人下载并安装后才可以使用，受托人可以因此收取一定的运维费用，也可以成为应用的见证人收取其中的交易费。</p>
+      </div>
+      <div class="modal-footer ">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+      </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="about-vote" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+       <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">民主投票</span></button>
+            <div class="modal-title">民主投票</div>
+      </div>
+      <div class="modal-body">
+            <p>主链内置了一套投票系统，目前的区块生产的见证人是用通过这套投票系统产生的，asch系统通过见证人的数量来调整整个网络的去中介程度，可以避免算力攻击和矿池中心化问题。</p>
+      </div>
+      <div class="modal-footer ">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+      </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="about-friend" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+       <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">开发者友好</span></button>
+            <div class="modal-title">开发者友好</div>
+      </div>
+      <div class="modal-body">
+            <p>主链内置了一套投票系统，目前的区块生产的见证人是用通过这套投票系统产生的，asch系统通过见证人的数量来调整整个网络的去中介程度，可以避免算力攻击和矿池中心化问题。</p>
+      </div>
+      <div class="modal-footer ">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+      </div>
+</div>
+</div>
+</div>
+<!-- 弹出框结束 -->
+
+<div class="share_link">                       
+   <!-- <a href="#"><img src="image/github.svg"></a>
+   <a href="#"><img src="image/weibo.svg"></a> -->
+         <ul class="clearfix">
+              <li><a href="https://twitter.com/AschPlatform" title="twitter" class="link_twitter"></a></li>
+              <li><a href="https://www.facebook.com/AschPla/" title="Facebook" class="link_facebook"></a></li>
+              <li><a href="https://t.me/joinchat/F5GtMA4R5w1K15O9pFZVeg" title="Telegram" class="link_Telegram"></a></li>
+              <li><a href="https://asch-platform.slack.com/ " title="slack" class="link_slack"></a><span></li>
+              <li><a href="https://t.me/joinchat/F5GtMA4R5w1K15O9pFZVeg" title="reddit" class="link_reddit"></a></li>
+              <li><a href="https://asch-platform.slack.com/ " title="weibo" class="link_weibo"></a><span></li>
+              <li><a href="https://t.me/joinchat/F5GtMA4R5w1K15O9pFZVeg" title="github" class="link_github"></a></li>  
+              <li><a href="https://t.me/joinchat/F5GtMA4R5w1K15O9pFZVeg" title="wechat" class="link_wechat"></a></li>   
+              <li style="width:200px;line-height: 30px">QQ群：5643564005</li>   
+        </ul>
+
+</div>
+
+<footer>
+   <p class="pull-right"><a href="#"><span class="glyphicon glyphicon-menu-up"></span></a></p>
+   <p>CopyRight &copy; silentwars 2016-2017 Design By silentwars</p>
+</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+         $("#demo-navbar .dropdown-menu a").click(function(){
+              var href=$(this).attr("href");
+              $("#feature-tab a[href='"+href+"']").tab("show");
+        });
+
+
+         var showLink_shadow=$(".showLink_shadow"),
+         showLink_box_title=$(".showLink_box_title"),
+         showLink_box_icon=$(".showLink_box_icon");
+
+         $(".showLink").on("mouseenter",function(){
+              $(this).find(showLink_shadow).css({display:'block'});
+              $(this).find(showLink_box_title).stop().animate({top:10}, 600);
+              $(this).find(showLink_box_icon).stop().animate({top:100}, 600);
+
+        });
+         $(".showLink").on("mouseleave",function(){
+              $(this).find(showLink_shadow).css({display:'none'},600);
+              $(this).find(showLink_box_title).stop().animate({top:-60}, 600);
+              $(this).find(showLink_box_icon).stop().animate({top:200}, 600);
+        });
+
+         var glyphicon_menu_up=$(".glyphicon-menu-up");
+         glyphicon_menu_up.on('click',function(){
+              $('html,body').animate({scrollTop:0},600);
+        });
+         $(window).on('scroll',function(){
+              if($(window).scrollTop()>$(window).height()){
+                   glyphicon_menu_up.fadeIn();
+
+             }else{
+                   glyphicon_menu_up.fadeOut();
+             }
+       });
+   });
+</script>
+</body>
+</head>

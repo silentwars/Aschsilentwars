@@ -1,0 +1,198 @@
+body{
+ padding-top: 50px;
+ padding-bottom: 40px;
+ background:url(images/bg.jpg) center top no-repeat;
+ background-size:100% 100%;
+ color: #5a5a5a;
+}
+/*全局变量*/
+.hr_30{height: 30px;}
+/*清除浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.fl{float: left;}
+.fr{float: right;}
+
+/* 简介 */
+.summary {padding-right: 15px;padding-left: 15px;}
+.summary .col-md-4 {margin-bottom: 20px;text-align: center;}
+
+/* 特性 */
+.feature {padding: 30px 0;}
+.feature-heading {font-size: 50px;color: #2a6496;}
+.feature-heading .text-muted {font-size: 28px;}
+
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .summary {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+  .feature-heading {
+    font-size: 34px;
+  }
+  .feature-heading .text-muted {
+    font-size: 22px;
+  }
+}
+
+/*navbar_brand*/ 
+.navbar-header .navbar-brand{
+  text-align:right; 
+  width:170px;
+  background: url(images/Asch.png) center no-repeat;
+  margin-right:350px;
+  padding:15px 0;
+  font-size: 20px;
+}
+
+/*首页巨幕*/
+
+.jumbotron{
+  text-align: center;
+  background: none;
+  padding: 140px 0 100px;
+}
+
+/*导航*/
+#works{
+  text-align: center;
+  margin:0 auto;
+  width: 85%;
+  padding:70px 0 120px;
+}
+.showLink{
+  width: 206px;
+  height: 156px; 
+  overflow: hidden; 
+  display: inline-block;
+  position: relative;
+  outline: 2px solid #c7c7c7;
+}
+
+.showLink_shadow{
+  position: absolute;
+  background:rgba(255,192,203,0.9) ;
+  width:206px;
+  height: 156px;
+  display: none;
+
+}
+.showLink_img{width: 200px;
+  height: 150px;
+  margin-top:3px;
+}
+.showLink_box_title{position: absolute;
+  text-align: center;
+  padding:20px 0;left:0;
+  right:0;
+  top:-60px;
+  font-size: 20px;
+}
+.showLink_box_icon{
+  position: absolute;
+  top:200px;
+  left:50%;
+  margin:-28px;
+}
+
+.navbar-nav li a{font-weight: bold;} 
+.navbar-nav li:hover{background:#eeebeb;}
+
+/* about asch*/
+.about_Asch{margin:0 auto; position: relative;width: 70%;}
+.about_Asch .row_style{background: #d9d9d9;border-radius: 20px;margin:0 auto;overflow: hidden;text-align: center;}
+.about_Asch h3{text-align: center;}
+.gly{margin-bottom:20px;}
+.gly_icon{width:100px;height: 100px;display: inline-block;border:5px solid #FFF;border-radius: 100px;}
+.col-md-3 p{padding:0;font-size: 16px;font-style: normal;font-weight: bold;color:#000;}
+.glyphicon{font-size: 50px;color:#000;margin-top:20px;}
+.slash{display: inline-block;content: "";background: green; height: 2px; width: 90px; -webkit-transform: rotate(-30deg);transform: rotate(-30deg);}
+.explain_left{font-size: 20px;font-weight: bold;}
+.gly_icon:hover{
+  background: radial-gradient(center,#FFF,#bfbfbf);
+  background: -webkit-radial-gradient(center,#FFF,#bfbfbf);
+  background: -o-radial-gradient(center,#FFF,#bfbfbf);
+  background:-moz-radial-gradient(center,#FFF,#bfbfbf);
+  border:5px solid #eeecec;
+  transition: 1s;}
+
+  #about_Asch_info{
+    width: 100%;
+    clear: both;
+    position: relative;
+    margin:45px auto;
+  }
+  #about_Asch_info:before{
+    top:0;
+    left: 0;
+    border-top: 2px solid #5686D6;
+    border-left: 2px solid #5686D6;   
+  }
+  #about_Asch_info:after{
+    bottom:0;
+    right: 0;
+    border-bottom: 2px solid #5686D6;
+    border-right: 2px solid #5686D6;
+  }
+  #about_Asch_info:before,#about_Asch_info:after{ 
+    position: absolute;
+    width: 50px;
+    display: inline-block;
+    height: 50px;
+    content: "";
+  }
+  #about_Asch_info p{
+    padding:5px;
+    margin: 0;
+    line-height: 34px;
+    font-size:16px;
+    font-weight: bold;
+  }
+
+  .tab-content{border-bottom:1px solid #CCC;}
+  .tab-content .tab-pane{padding:10px 0 10px;}   
+
+  /*use asch*/
+  .contact_me{line-height: 24px;padding:0 0 10px 0;}
+  .contact_color{text-align: center;}
+  .contact_color span:nth-child(2){color:#f00;}
+  .contact_color span:nth-child(3){color:#3cf;}
+  .contact_color span:nth-child(4){color:#6c0;}
+  .contact_color span:nth-child(5){color:#f63;}
+  .well_list{width:33%;margin:0px auto;padding:10px 10px 0;}
+  .well_list p{font-size: 16px;font-style: normal;font-family: "微软雅黑";line-height:30px;color:#6c0;}
+  .well_list h3{padding:10px 0;margin:0;text-align: center;font-weight: bold;}
+  /*asch链接*/ 
+  .share_link ul{width: 57%;margin:0 auto;}
+  .share_link ul li{float: left;width:50px;display: inline-block;overflow: hidden;}
+  .share_link ul li a{background: url(../image/share06.png) 10px 0 no-repeat ;color: #999;
+   display: block;
+   font-size: 16px;
+   line-height: 26px;
+   height: 35px;
+   overflow: hidden;
+ }
+ .link_twitter:hover{background-position: 10px -50px;}
+ .share_link a.link_facebook{background-position: 10px -100px;}
+ .share_link a.link_facebook:hover{background-position: 10px -150px;}
+ .share_link a.link_Telegram{background-position: 10px -200px;}
+ .share_link a.link_Telegram:hover{background-position: 10px -250px;}
+ .share_link a.link_slack{background-position: 10px -300px;}
+ .share_link a.link_slack:hover{background-position: 10px -350px;}
+  .share_link a.link_reddit{background-position: 10px -400px;}
+ .share_link a.link_reddit:hover{background-position: 10px -448px;}
+  .share_link a.link_weibo{background-position: 10px -501px;}
+ .share_link a.link_weibo:hover{background-position: 10px -554px;}
+  .share_link a.link_github{background-position: 10px -607px;}
+ .share_link a.link_github:hover{background-position: 10px -662px;}
+   .share_link a.link_wechat{background-position: 10px -707px;}
+ .share_link a.link_wechat:hover{background-position: 10px -750px;}
+
+
+
+ /*footer*/
+ footer{border-top: 2px solid #CCC;text-align: center;}
+ footer .glyphicon-menu-up{font-size: 30px;padding:10px;border-radius: 50px;background: #CCC;position: fixed;top:510px;display: none;}
+ footer .glyphicon-menu-up:hover{background: #FFFFFF;}
