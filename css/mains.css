@@ -164,8 +164,8 @@ body{
   .well_list p{font-size: 16px;font-style: normal;font-family: "微软雅黑";line-height:30px;color:#6c0;}
   .well_list h3{padding:10px 0;margin:0;text-align: center;font-weight: bold;}
   /*asch链接*/ 
-  .share_link ul{width: 75%;margin:0 auto;text-align: center;}
-  .share_link ul li{float: left;width:8%;display: inline;overflow: hidden;}
+  .share_link ul{width: 60%;margin:0 auto;text-align: center;}
+  .share_link ul li{float: left;width:45px;display: inline;overflow: hidden;}
   .share_link ul li a{background: url(../image/share06.png) no-repeat ;color: #999;
    display: block;
    font-size: 16px;
