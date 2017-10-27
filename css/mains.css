@@ -42,7 +42,7 @@ body{
   text-align:right; 
   width:170px;
   background: url(images/Asch.png) center no-repeat;
-  margin-right:350px;
+  margin-right:250px;
   padding:15px 0;
   font-size: 20px;
 }
@@ -63,7 +63,6 @@ body{
   padding:70px 0 120px;
 }
 .showLink{
-  width: 206px;
   height: 156px; 
   overflow: hidden; 
   display: inline-block;
@@ -165,7 +164,7 @@ body{
   .well_list p{font-size: 16px;font-style: normal;font-family: "微软雅黑";line-height:30px;color:#6c0;}
   .well_list h3{padding:10px 0;margin:0;text-align: center;font-weight: bold;}
   /*asch链接*/ 
-  .share_link ul{width: 57%;margin:0 auto;}
+  .share_link ul{width: 70%;margin:0 auto;margin-left:310px;}
   .share_link ul li{float: left;width:50px;display: inline-block;overflow: hidden;}
   .share_link ul li a{background: url(../image/share06.png) 10px 0 no-repeat ;color: #999;
    display: block;
